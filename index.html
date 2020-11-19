@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+</body>
+<script type="text/javascript">
+    const dataurl = '';
+    var url = location.search;
+    if (url && url.length > 1 && url.indexOf('?dataurl=') !== -1) {
+        url = url.replace("?dataurl=", "");
+        window.location.replace(url);
+    } else {
+        window.location.replace(dataurl);
+    }
+</script>
+</html>
